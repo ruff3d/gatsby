@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import '../styles/index.css';
 
-function Index() {
+export default function Index() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
@@ -53,4 +53,3 @@ function Index() {
   );
 }
 
-export default Index;
