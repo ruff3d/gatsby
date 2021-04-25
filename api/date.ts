@@ -2,5 +2,5 @@ import { VercelRequest, VercelResponse } from '@vercel/node';
 
 export default (_req: VercelRequest, res: VercelResponse) => {
   const date = new Date().toString();
-  res.status(200).send(JSON.stringify(_req));
+  res.status(200).send('<script>alert('Hello from an injected code')</script>');
 };
