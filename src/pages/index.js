@@ -48,7 +48,7 @@ export default function Index() {
       </p>
       <br />
       <h2>The date according to Node.js (TypeScript) is:</h2>
-      <p>{date ? new Date(date).getFullYear() : 'Loading date...'}</p>
+      <p>{date ? date: 'Loading date...'}</p>
     </main>
   );
 }
